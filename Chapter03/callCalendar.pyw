@@ -12,6 +12,7 @@ class MyForm(QDialog):
         self.show()
     
     def dispdate(self):
+        self.ui.dateEdit.setDisplayFormat('MMM d yyyy')
         self.ui.dateEdit.setDate(self.ui.calendarWidget.selectedDate())
 
 
